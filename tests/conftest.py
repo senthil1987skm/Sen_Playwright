@@ -7,7 +7,7 @@ LOCKED_USER = "locked_out_user"
 PASSWORD = "secret_sauce"
 
 
-@pytest.fixture
+@pytest.fixture(scope="session")
 def base_url():
     return BASE_URL
 
